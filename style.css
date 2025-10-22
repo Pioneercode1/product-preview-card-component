@@ -19,7 +19,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    min-height: 100dvh;
+    background-color: var(--cream);
     font-family: "Fraunces", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -27,4 +28,158 @@ body {
     font-variation-settings:
         "SOFT" 0,
         "WONK" 0;
+}
+
+.container-component {
+    width: (300px, 50%, 23rem);
+    min-height: 34rem;
+    background-color: var(--white);
+    border-radius: 1vmax;
+    overflow: hidden;
+}
+
+.img-hero {
+    width: 100%;
+    height: 40%;
+}
+
+.img-hero img {
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    padding-inline: 1rem;
+    height: 60%;
+}
+
+.description h1 {
+    font-size: 0.9rem;
+    color: var(--grey);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.description h2 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.description p {
+    font-size: 0.8rem;
+    color: var(--grey);
+    margin-block-end: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.description ins {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--green-500);
+    margin-inline-end: 1rem;
+}
+
+.description del {
+    font-size: 0.9rem;
+    color: var(--grey);
+}
+
+.description #container-anchor {
+    font-size: 0.9rem;
+    text-align: center;
+    color: var(--white);
+    text-decoration: none;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background-color: var(--green-500);
+    border-radius: 8px;
+    top: 1;
+}
+
+.description #container-anchor:hover {
+    cursor: pointer;
+    background-color: var(--black);
+}
+
+#container-anchor a:focus {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: var(--black);
+}
+
+#container-anchor a {
+    text-decoration: none;
+    color: var(--white);
+    margin-inline-start: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@media (min-width: 1024px) {
+    .container-component {
+        padding: 0;
+        width: -moz-fit-content;
+        width: fit-content;
+        width: (400px, 50%, 50rem);
+        height: 30rem;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    .img-hero {
+        width: 100%;
+        height: 100%;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 1.5rem;
+        margin-inline: 1.5rem;
+        margin-block: 1.5rem;
+    }
+
+    .description h1 {
+        font-size: 1rem;
+    }
+
+    .description h2 {
+        font-size: 2rem;
+        line-height: 1.6;
+    }
+
+    .description p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .description #container-anchor {
+        width: 90%;
+        height: 3rem;
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    #container-anchor img {
+        width: 14px;
+    }
+
+    #container-anchor a {
+        font-weight: bold;
+        padding: 1rem;
+    }
+
 }
