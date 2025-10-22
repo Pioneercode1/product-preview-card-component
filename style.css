@@ -143,6 +143,8 @@ body {
         width: 50%;
     }
 
+    .img-hero img {}
+
     .description {
         display: flex;
         flex-direction: column;
